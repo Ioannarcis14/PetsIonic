@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-menu side="start" menuId="mainMenu" contentId="mainContent">
+    <ion-header color="primary">
+      <ion-toolbar color="primary">
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item [routerLink]="['/home']" [routerLinkActive]="['active-menu-item']">
+            <ion-icon name="home-outline"></ion-icon>
+            <ion-label [ngClass]="['ion-margin-start']">Inici</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
+        <ion-menu-toggle auto-hide="true">
+          <ion-item [routerLink]="['/pets', 'cats']" [routerLinkActive]="['active-menu-item']">
+            <ion-icon name="paw-outline"></ion-icon>
+            <ion-label [ngClass]="['ion-margin-start']">Mascotes</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="true" *ngIf="AuthSession">
+          <ion-item [routerLink]="['/profile']" [routerLinkActive]="['active-menu-item']">
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-label [ngClass]="['ion-margin-start']">Perfil</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="mainContent"></ion-router-outlet>
+</ion-app>

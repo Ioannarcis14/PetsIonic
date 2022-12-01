@@ -1,0 +1,34 @@
+ion-slide {
+    ion-card {
+        width: 75%;
+    }
+
+    ion-card > ion-header {
+        object-fit: cover;
+        max-width: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+    ion-card > ion-header::after {
+        display: none;
+    }
+    
+
+    ion-list {
+        ion-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ion-label.observations {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+ion-card > ion-header {
+    object-fit: cover;
+    max-width: 100%;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+    }
+}
+
+ion-card > ion-header::after {
+    display: none;
+}
+
+ion-card {
+    ion-card-content {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+
+            h1 {
+                font-size: 20px;
+                color: #4ed89e;
+            }
+        }
+
+        button {
+            color: #4ed89e;
+            background-color: #000;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        button > .dislike {
+            color: #cf5f5f;
+        }
+    }
+}
+
+div.toast-wrapper.toast-button {
+    background-color: #000 !important;
+    color: #fff;
+}

@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let dog of getDogs;let i=index">
+        <ion-card>
+          <ion-header>
+            <img src="{{animal.carousel_imgs[i]}}" alt="First slide">
+          </ion-header>
+          <ion-card-content>
+            {{biografia}}
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  <span class="listTitle">Sexe</span>
+                  <p>{{animal.sex}}</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <span class="listTitle">Naixement</span>
+                  <p>{{dataNaixement}}</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <span class="listTitle">Edat</span>
+                  <p>{{edat}} anys</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <span class="listTitle">Xip</span>
+                  <p>{{animal.chip}}</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <span class="listTitle">Malalties</span>
+                  <p>{{malalties}}</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>
+                  <span class="listTitle">Vacunes</span>
+                  <p>{{vacunes}}</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label class="observations">
+                  <span class="listTitle">Observacions</span>
+                  <p>{{animal.observations}}</p>
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+

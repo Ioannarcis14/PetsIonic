@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear compte nou</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngClass]="['ion-margin']">
+    <ion-grid>
+      <ion-row>
+        <ion-row>
+          <ion-label>Nom complet</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input [(ngModel)]="name"></ion-input>
+        </ion-row>
+      </ion-row>
+      <ion-row>
+        <ion-row>
+          <ion-label>Correu electrònic</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input [(ngModel)]="email"></ion-input>
+        </ion-row>
+      </ion-row>
+      <ion-row>
+        <ion-row>
+          <ion-label>Contrasenya</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input type="password" [(ngModel)]="passwd"></ion-input>
+        </ion-row>
+      </ion-row>
+      <ion-row [ngClass]="['ion-padding-top']">
+        <ion-row>
+          <ion-label>Foto Perfil</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input type="text" [(ngModel)]="profile_pic"></ion-input>
+        </ion-row>
+      </ion-row>
+      <ion-row [ngClass]="['ion-justify-content-center']">
+        <ion-button color="danger" (click)="back()">Cancel·lar</ion-button>
+        <ion-button (click)="register()">Crear compte</ion-button>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

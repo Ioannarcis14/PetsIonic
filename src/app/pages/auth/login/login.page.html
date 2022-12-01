@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inici de sessió</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngClass]="['ion-margin']">
+    <ion-grid>
+      <ion-row>
+        <ion-row>
+          <ion-label>Correu electrònic</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input [(ngModel)]="email"></ion-input>
+        </ion-row>
+      </ion-row>
+      <ion-row>
+        <ion-row>
+          <ion-label>Contrasenya</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-input type="password" [(ngModel)]="passwd"></ion-input>
+        </ion-row>
+      </ion-row>
+      <ion-row [ngClass]="['ion-justify-content-center']">
+        <ion-button color="danger" (click)="back()">Cancel·lar</ion-button>
+        <ion-button color="secondary" (click)="login()">Iniciar sessió</ion-button>
+      </ion-row>
+      <ion-row [ngClass]="['ion-justify-content-center']">
+        <a [routerLink]="['/register']">Crear un nou compte</a>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,16 @@
+{
+    "RescueHouse": [
+		{
+            "name": "+Cota",
+            "company": "Rescue House",
+            "main_image": "https://cdn.livekindly.co/wp-content/uploads/2019/02/livekindly_tinder.jpg",
+            "biography": ["El nostre propòsit es ajudar-vos a reunir una parella per a la vostra mascota o amic/ga del ànima. Es basa en quedar al punt de recollida i llogar el gat/gos per 1 dia (19.99€) o 2 dies (29.99€). El nostre punt de recollida és el carrer inventat 24."],
+            "zone": "Lleida",
+            "street": "Carrer Inventat",
+            "cont_email": "+cota@gmail.com",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14296.667620237671!2d0.5795415281034532!3d41.59344145757309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a72021d046cd1d%3A0x96462cdd6272567a!2sInstitut%20Caparrella!5e0!3m2!1ses-419!2ses!4v1638980471201!5m2!1ses-419!2ses",
+            "phone": "973456456",
+            "p_code": "25006"
+        }
+    ]
+}
